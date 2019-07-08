@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace BlogSharp.UI.Controllers
+namespace BlogSharp.Controllers
 {
     public class HomeController : Controller
     {
