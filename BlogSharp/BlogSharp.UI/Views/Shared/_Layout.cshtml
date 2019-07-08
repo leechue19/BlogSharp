@@ -23,6 +23,13 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>
+                        @if (@User.Identity.IsAuthenticated)
+                        {
+                            @Html.ActionLink("Hello " + @User.Identity.Name + "!", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        }
+                    </li>
+                    <li>@Url.Action("Logout","Auth")</li>
                 </ul>
             </div>
         </div>

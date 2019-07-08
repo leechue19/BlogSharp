@@ -1,0 +1,10 @@
+﻿@model BlogSharp.UI.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+@Html.ValidationSummary(true)
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(u => u.Email, new { @class="form-control", placeholder="Email"})<br/>
+    @Html.PasswordFor(u => u.Password, new { @class="form-control", placeholder="Password"})
+}
