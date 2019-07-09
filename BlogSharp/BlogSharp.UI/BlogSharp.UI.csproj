@@ -222,6 +222,16 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSharp.Data\BlogSharp.Data.csproj">
+      <Project>{d1ca3f97-b3b3-45b0-ac3f-ced013cff2dc}</Project>
+      <Name>BlogSharp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogSharp.Models\BlogSharp.Models.csproj">
+      <Project>{b48386b5-e993-4717-b614-c9ba4451058d}</Project>
+      <Name>BlogSharp.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
